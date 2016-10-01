@@ -445,7 +445,6 @@ if [[ $(which gnome-shell) ]]; then
   (( STAGE++ )); echo -e "\n\n ${GREEN}[+]${RESET} (${STAGE}/${TOTAL}) Configuring ${GREEN}GNOME 3${RESET} ~ desktop environment"
   export DISPLAY=:0.0
   #-- Gnome Extension - Dash Dock (the toolbar with all the icons)
-  gsettings set org.gnome.shell.extensions.dash-to-dock extend-height true      # Set dock to use the full height
   gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false      # Set dock to use the full height
   gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'RIGHT'   # Set dock to the right
   gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed true         # Set dock to be always visible
